@@ -1,0 +1,25 @@
+{
+  "name": "lanlin/elastic-apm-agent",
+  "description": "Elastic APM PHP Agent",
+  "keywords": [ "elastic", "apm", "tracing", "apm-agent" ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    { "name": "Sergey Kleyman" }
+  ],
+  "require": {
+    "php": "^7.2||8.0.*||8.1.*||8.2.*",
+    "ext-json": "*",
+    "ext-pcntl": "*",
+    "psr/log": "^1.0"
+  },
+  "suggest": {
+    "ext-curl": "*",
+    "monolog/monolog": "Allows for client-level logging and tracing"
+  },
+  "autoload": {
+    "psr-4": {
+      "Elastic\\Apm\\": "./src/ElasticApm/"
+    }
+  }
+}

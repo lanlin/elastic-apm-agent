@@ -1,0 +1,9 @@
+# ignore dot files
+.DS_Store
+
+# ignore files
+composer.lock
+
+# ignore folders
+/.idea/
+/vendor/
